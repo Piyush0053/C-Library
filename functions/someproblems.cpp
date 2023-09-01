@@ -27,7 +27,7 @@ int main(){
 
 // for no. of set bit(means binary form main kitne "1" hai)
 
-int n=3;
+int n=-3;
 int ans =0;
 
 while (n !=0)
@@ -41,5 +41,5 @@ while (n !=0)
     n=n>>1;
     
 }
-
+cout<<ans;
 }
