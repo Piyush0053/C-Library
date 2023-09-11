@@ -1,4 +1,5 @@
 #include<iostream>
+#include <cstring>
 using namespace std;
 int main(){
 // int arr[53];
@@ -59,4 +60,4 @@ int main(){
 // cout<<arr[3];
 
 
-}
+
