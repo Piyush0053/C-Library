@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
- 
+ #include<limits.h>
 
 // Method 1 using FUNCTIONS
 
@@ -76,7 +76,73 @@ int main(){
 // cout<<flag2<<endl;
 
 // Ques.-----Maximum no. of an array
-int arr[]={2,3,5,6,7,89,2,145,645,0};
+//  int arr[]={2,3,5,6,7,89,2,145,645,0};
+// int size=10;
+// // initialize the maxi variable with the minimum possible integer value 
+// int maxi= INT_MIN;
+// for(int i=0;i<size;i++){ 
+//     if(arr[i]>maxi){
+//          maxi=arr[i];
+//     }
+// }
+// cout<<"maximum no. is"<<maxi<<endl;
+// return 0;
+
+
+// Ques.-----Minimum no. of an array
+
+//   int arr[]={2,3,5,6,7,89,2,145,645,0};
+//  int size=10;
+
+// //   initialize the MIN variable with the mAXIMUM possible integer value 
+
+//  int mini= INT_MAX;
+//  for(int i=0;i<size;i++){
+//     if(arr[i]<mini){
+//         mini=arr[i];
+//     }
+//  }
+// cout<<"minimum no is"<<mini<<endl;
+
+
+// Ques Extreme points print in arrays
+
+//  int arr[]={3,5,6,7,89,2,145,645,0};
+//  int size=9;
+
+// int start=0;
+// int end=size-1;
+
+// while(true){
+//     if(start>end)
+//     break;
+
+//     cout<<arr[start]<<" ";
+//     cout<<arr[end]<<" "<<endl;
+//     start++;
+//     end--;
+// }
+
+// Reverse of numbers in arrays
+
+ int arr[]={3,5,6,7,89,2,145,645,0};
+ int size=9;
+
+ int start=0;
+ int end=size-1;
+
+ while (start<=end)
+ {
+    // step1
+    swap(arr[start],arr[end]);
+    // step 2
+    start++;
+    end--;
+ }
+  
+  for(int i=0;i<size;i++){
+    cout<<arr[i]<<endl;
+  }
 
 
 }
