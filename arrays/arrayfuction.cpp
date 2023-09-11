@@ -17,7 +17,7 @@ void increment(int arr[],int size){
 int main(){
 int arr[]={5,6,7};
 int size=3;
-//  increment(arr,size);
+  increment(arr,size);
  printarray(arr,size);
 
 

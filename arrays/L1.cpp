@@ -58,6 +58,6 @@ int main(){
 // for marking all the values of array equals to zero
 //  int arr[100]={0};
 // cout<<arr[3];
-
+}
 
 

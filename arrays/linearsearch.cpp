@@ -127,17 +127,39 @@ int main(){
 
  int arr[]={3,5,6,7,89,2,145,645,0};
  int size=9;
-
+int c;
  int start=0;
  int end=size-1;
 
- while (start<=end)
- {
-    // step1
-    swap(arr[start],arr[end]);
-    // step 2
-    start++;
-    end--;
+ while (start<=end){
+ 
+  // Method 1
+//  {
+//     // step1
+//     swap(arr[start],arr[end]);
+//     // step 2
+//     start++;
+//     end--;
+
+
+// Method 2 for swapping using temporary variable
+// c=arr[start];
+// arr[start]=arr[end];
+// arr[end]=c;
+// start++;
+//    end--;
+
+// method 3 for swapping 
+  //  arr[start]=arr[start]+arr[end];
+  //  arr[end]=arr[start]-arr[end];
+  //  arr[start]=arr[start]-arr[end];
+  //  start++;
+  //  end--;
+
+// Method 4 for swapping using "XOR" gate
+
+
+
  }
   
   for(int i=0;i<size;i++){
