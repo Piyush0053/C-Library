@@ -55,7 +55,8 @@ int main(){
 //     cout<<"not found";
 // }
 
-// count 0's and 1's ina array 
+// count 0's and 1's in a array 
+
 // my method
 // int arr[]={0,1,1,0,1,1,1,1,0,0,0,1,1,1,1};
 // int size=15;
@@ -126,8 +127,7 @@ int main(){
 // Reverse of numbers in arrays
 
  int arr[]={3,5,6,7,89,2,145,645,0};
- int size=9;
-int c;
+ int size=9;  
  int start=0;
  int end=size-1;
 
@@ -135,11 +135,11 @@ int c;
  
   // Method 1
 //  {
-//     // step1
-//     swap(arr[start],arr[end]);
-//     // step 2
-//     start++;
-//     end--;
+    // step1
+    swap(arr[start],arr[end]);
+    // step 2
+    start++;
+    end--;
 
 
 // Method 2 for swapping using temporary variable
