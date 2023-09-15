@@ -115,24 +115,103 @@ using namespace std;
 // QUES 4==Interview ques
 // PAIR SUM==Find a pair that upon addition gives value equals to sum.
  
+// int main(){
+
+// vector<int>arr{1,3,5,7,2,4,6};
+// // print all pairs
+// // outer loop will traverse for each element
+// int sum=9;
+// for (int i = 0; i < arr.size(); i++)
+// {
+//     int element=arr[i];
+
+//     // for every element ,will traverse on aage wale elements
+//     for(int j=i+1;j<arr.size();j++){
+//         // for printing the pairs
+//         cout<<"("<<element<<","<<arr[j]<<")"<<endl;
+//         // for finding sum
+//         if (element+arr[j]==sum)
+//         {
+//             cout<<"pair of sum is"<<element<<" "<<arr[j]<<endl;
+//         }
+        
+//     }   
+// }
+
+
+// QUES 5
+// TRIPLET SUM 
+//  int main(){
+//  vector<int>arr{10,20,30,40,50};
+//  int sum=80;
+//  for(int i=0;i<arr.size();i++){
+//      int ele1=arr[i];
+//  for(int j=i+1;j<arr.size();j++){
+//      int ele2=arr[j];
+//  for(int k=j+1;k<arr.size();k++){
+//      int ele3=arr[k];
+ 
+//  if(ele1+ele2+ele3==sum){
+//     cout<<"pairs are"<<ele1<<" "<<ele2<<" "<<ele3<<endl;
+//                         }
+//   }
+//  }
+//   }
+
+// QUADRET SUM
+//  int main(){
+//      vector<int>arr{10,20,30,40,50};
+
+//  int sum=100;
+//  for (int i = 0; i < arr.size(); i++)
+//  {
+//     int ele1=arr[i];
+//     for(int j=i+1;j<arr.size();j++){
+//         int ele2=arr[j];
+//         for (int k = j+1; k < arr.size(); k++)
+//         {
+//             int ele3=arr[k];
+//             for (int l = k+1; l < arr.size(); l++)
+//             {
+//                 int ele4=arr[l];
+//                 if (ele1 + ele2 +ele3 + ele4 == sum)
+//                 {
+//                     cout<<"quad pairs are"<<ele1<<","<<ele2<<","<<ele3<<","<<ele4<<endl;
+
+//                 }
+                
+//             }
+            
+//         }
+        
+//     }
+//  }
+
+// QUES 5
+// SORT 0's and 1's
+
 int main(){
+    vector<int>arr{0,1,0,1,0,1,0,1,0,1};
+    int start =0;
+int end =arr.size();
 
-vector<int>arr{1,3,5,7,2,4,6};
-// print all pairs
-// outer loop will traverse for each element
-
-for (int i = 0; i < arr.size(); i++)
-{
-    int element=arr[i];
-
-    // for every element ,will traverse on aage wale elements
-    for(int j=i+1;j<arr.size();j++){
-        cout<<"("<<element<<","<<arr[j]<<")"<<endl;
-    }   
+int i=0;
+while(i<arr.size()){
+    if(arr[i]==0){
+        // swap from left
+        swap(arr[start],arr[i]);
+        i++;start++;
+    }
+        if (arr[i]==1)
+       {
+        swap(arr[i],arr[end]);
+        end--;
+        
+       }
+    
 }
-
-
-
-
+//  print
+for(auto value:arr)
+cout<<value<<" ";
     return 0;
 }
