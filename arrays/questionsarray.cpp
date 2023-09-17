@@ -190,28 +190,33 @@ using namespace std;
 // QUES 5
 // SORT 0's and 1's
 
-int main(){
-    vector<int>arr{0,1,0,1,0,1,0,1,0,1};
-    int start =0;
-    int end =arr.size()-1;
+// int main(){
+//     vector<int>arr{0,1,0,1,0,1,0,1,0,1};
+//     int start =0;
+//     int end =arr.size()-1;
 
-int i=0;
-while(i!=end){
-    if(arr[i]==0){
-        // swap from left
-        swap(arr[start],arr[i]);
-        i++;start++;
-    }
-        else
-       {
-        swap(arr[i],arr[end]);
-        end--;
+// int i=0;
+// while(i!=end){
+//     if(arr[i]==0){
+//         // swap from left
+//         swap(arr[start],arr[i]);
+//         i++;start++;
+//     }
+//         else
+//        {
+//         swap(arr[i],arr[end]);
+//         end--;
         
-       }    
+//        }    
     
-}
-//  print
-for(auto value:arr)
-cout<<value<<" ";
-    return 0;
+// }
+// //  print
+// for(auto value:arr)
+// cout<<value<<" ";
+//     return 0;
+
+
+
+
+
 }
