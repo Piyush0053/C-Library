@@ -1,3 +1,4 @@
+#include <bits/stdc++.h>
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -100,7 +101,7 @@ using namespace std;
 //     brr[j]=INT8_MIN;
 //         ans.push_back(element);
 //         // we canalso use break here
-//         // break;x`
+//         // break;
 //     }
 //    }
 // }
@@ -123,16 +124,16 @@ using namespace std;
 // int sum=9;
 // for (int i = 0; i < arr.size(); i++)
 // {
-//     int element=arr[i];
+//     // int element=arr[i];
 
 //     // for every element ,will traverse on aage wale elements
 //     for(int j=i+1;j<arr.size();j++){
 //         // for printing the pairs
-//         cout<<"("<<element<<","<<arr[j]<<")"<<endl;
+//         cout<<"("<<arr[i]<<","<<arr[j]<<")"<<endl;
 //         // for finding sum
-//         if (element+arr[j]==sum)
+//         if (arr[i]+arr[j]==sum)
 //         {
-//             cout<<"pair of sum is"<<element<<" "<<arr[j]<<endl;
+//             cout<<"pair of sum is"<<arr[i]<<" "<<arr[j]<<endl;
 //         }
         
 //     }   
@@ -206,7 +207,6 @@ using namespace std;
 //        {
 //         swap(arr[i],arr[end]);
 //         end--;
-        
 //        }    
     
 // }
@@ -215,8 +215,40 @@ using namespace std;
 // cout<<value<<" ";
 //     return 0;
 
+//  }
+
+// int main(){
+//     vector<int> arr{1,2,2,3,4};
+//     vector<int> ans;
+//     int i=0;
+//     while(i<arr.size()){
+//         if(arr[i]==arr[i+1]){
+//         break;
+//         ans.push_back(arr[i]);
+//         }
+//         else{
+//         ans.push_back(arr[i]);
+//         }
+//     }
+//     for(auto value:ans)
+//     cout<<value<<" ";
+//     return 0;
+// }
 
 
 
-
+// Best time to buy and sell stocks
+int main(){
+    vector<int> arr{7,8,3,4,3,1,2};
+    int min= INT_MAX;
+    int i=0;
+    while(i<arr.size()){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+            i++;
+    }
+    
+    cout<<min;
+    return 0;
 }
